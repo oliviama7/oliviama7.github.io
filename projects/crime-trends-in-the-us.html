@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olivia | Crime Trends in the U.S.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/custom.css">
+</head>
+<body class="pt-[178px]">
+
+  <nav class="fixed top-0 left-0 w-full bg-white z-50 h-[178px]">
+    <div class="flex items-center justify-between h-full px-[63px]">
+      <a href="../index.html">
+        <img src="../assets/images/logo.png" alt="Olivia" class="w-[70px] h-[70px] object-contain">
+      </a>
+      <ul class="hidden md:flex items-center gap-x-[50px] text-[18px] text-[#393a39]">
+        <li><a href="../index.html#consulting" class="nav-link" data-text="Consulting">Consulting</a></li>
+        <li><a href="../projects.html" class="nav-link" data-text="My Projects">My Projects</a></li>
+        <li><a href="../art.html" class="nav-link" data-text="Art">Art</a></li>
+        <li><a href="../about.html" class="nav-link" data-text="About Me">About Me</a></li>
+        <li><a href="../resume.pdf" target="_blank" class="nav-link" data-text="Resume">Resume</a></li>
+      </ul>
+      <button id="menu-toggle" class="md:hidden p-2" aria-label="Toggle menu" aria-expanded="false">
+        <div class="flex flex-col gap-1.5">
+          <span class="block w-6 h-0.5 bg-[#393a39]"></span>
+          <span class="block w-6 h-0.5 bg-[#393a39]"></span>
+          <span class="block w-6 h-0.5 bg-[#393a39]"></span>
+        </div>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden bg-white border-t border-gray-100 px-6 pb-4">
+      <ul class="flex flex-col text-[16px] text-[#393a39]">
+        <li><a href="../index.html#consulting" class="block py-3 hover:font-bold">Consulting</a></li>
+        <li><a href="../projects.html" class="block py-3 hover:font-bold">My Projects</a></li>
+        <li><a href="../art.html" class="block py-3 hover:font-bold">Art</a></li>
+        <li><a href="../about.html" class="block py-3 hover:font-bold">About Me</a></li>
+        <li><a href="../resume.pdf" target="_blank" class="block py-3 hover:font-bold">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="px-[126px] pt-10 pb-24 max-w-[1280px] mx-auto text-[#393a39]">
+
+    <h1 class="text-[25px] font-bold mb-6">Crime Trends in the U.S.</h1>
+
+    <p class="text-[18px] leading-relaxed mb-10 max-w-[800px]">
+      Historically, the U.S. experienced rising crime rates for several decades, peaking in the early 1990s before entering a period of notable decline. This project examines long-term crime trends from 1960 to 2022 using regional patterns, state-level comparisons, and an examination of Illinois' property crime composition to understand the landscape of American public safety.
+    </p>
+
+    <!-- Tableau embed -->
+    <div class="mb-14 max-w-[900px] mx-auto">
+      <div class='tableauPlaceholder' id='viz1778398129461' style='position: relative'>
+        <noscript><a href='#'><img alt='Dashboard' src='https://public.tableau.com/static/images/EC/ECON120Project3CrimeTrends/Dashboard/1_rss.png' style='border: none' /></a></noscript>
+        <object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='ECON120Project3CrimeTrends/Dashboard' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https://public.tableau.com/static/images/EC/ECON120Project3CrimeTrends/Dashboard/1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en-US' />
+        </object>
+      </div>
+      <script type='text/javascript'>
+        var divElement = document.getElementById('viz1778398129461');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        if (divElement.offsetWidth > 800) { vizElement.style.width='850px'; vizElement.style.height='1127px'; }
+        else if (divElement.offsetWidth > 500) { vizElement.style.width='850px'; vizElement.style.height='1127px'; }
+        else { vizElement.style.width='100%'; vizElement.style.height='1827px'; }
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+      </script>
+    </div>
+
+    <!-- Methodology and Data Sources -->
+    <section class="mb-8 max-w-[800px]">
+      <h2 class="text-[18px] font-bold mb-3">Methodology and Data Sources</h2>
+      <p class="text-[18px] leading-relaxed">
+        Data were sourced from the Federal Bureau of Investigation's Uniform Crime Reports (UCR), which provide standardized crime statistics across the United States from 1960 to 2022. To ensure consistency, all measures are normalized as rates per 100,000 residents for a clearer understanding of the relative frequency of criminal activity. Regional classifications follow the U.S. Census Bureau's geographic grouping: the West, South, Midwest, and Northeast.
+      </p>
+    </section>
+
+    <!-- Measure Descriptions -->
+    <section class="mb-8 max-w-[800px]">
+      <h2 class="text-[18px] font-bold mb-3">Measure Descriptions</h2>
+      <p class="text-[18px] leading-relaxed mb-3">The analysis focuses on three primary categories of crime:</p>
+      <ol class="list-decimal list-inside text-[18px] leading-relaxed space-y-2 pl-2">
+        <li><strong>Murder and nonnegligent manslaughter rate:</strong> The number of willful killings of another person per 100,000 residents. Because homicide is both serious and relatively rare, it is generally reported more accurately than other types of crime.</li>
+        <li><strong>Violent crime rate:</strong> Offenses that involve force or the threat of force. This category includes murder, rape, aggravated assault, and robbery.</li>
+        <li><strong>Property crime rate:</strong> The unlawful taking of property without the use of force against a person. These include burglary, larceny-theft, and motor vehicle theft.</li>
+      </ol>
+    </section>
+
+    <!-- Comparative Trends and Analysis -->
+    <section class="mb-8 max-w-[800px]">
+      <h2 class="text-[18px] font-bold mb-3">Comparative Trends and Analysis</h2>
+      <p class="text-[18px] leading-relaxed mb-4">
+        Because of its severity and relatively reliable reporting, the murder rate is often used as a key indicator of broader crime trends and policy effectiveness. From 1960 to 2022, murder rate trends show clear regional differences. The South has consistently maintained the highest murder rates in the country, followed by the Midwest and the West, while the Northeast generally records the lowest murder rates. Between 1972 and 1976, the U.S. Supreme Court imposed a temporary moratorium on capital punishment. During this period, all regions experienced rising murder rates, though these rates continued to fluctuate after the moratorium ended in 1976. While this pattern may suggest that the legal presence of the death penalty could have a deterrent effect, it is only one of many factors that influence homicide rates. A second major peak in murder rates occurred in the early 1990s, after which rates declined greatly and continued to fall in the following decades.
+      </p>
+      <p class="text-[18px] leading-relaxed mb-4">
+        At the state level, crime patterns are similar. In 1960, most states were clustered at relatively low levels of violent and property crime compared to later decades. Over time, this cluster expanded as crime rates increased, reaching their highest levels in the early 1990s. Following this peak, the distribution of states contracted again as crime rates declined from the late 1990s through the present day. The data also reveal a positive relationship between violent and property crime rates across states. When crime levels were generally higher, there was greater variation among states, with large states such as California, New York, and Florida experiencing particularly high crime rates during the early 1990s.
+      </p>
+      <p class="text-[18px] leading-relaxed">
+        In Illinois, the composition of property crime has shifted, but generally remained similar in terms of composition. While the total property crime rate changed following the general crime patterns over time, larceny-theft is the largest share of property crime throughout the entire time period. Burglary was a significant component during the 1970s and 1980s but declined substantially afterwards. Motor vehicle theft represents a smaller portion of property crime.
+      </p>
+    </section>
+
+    <!-- Literature Review and National Context -->
+    <section class="mb-10 max-w-[800px]">
+      <h2 class="text-[18px] font-bold mb-3">Literature Review and National Context</h2>
+      <p class="text-[18px] leading-relaxed mb-4">
+        The national and Illinois trends observed in this analysis reflect broader patterns identified in previous research. According to the Pew Research Center, both violent and property crime rates in the United States increased significantly from the 1960s through the early 1990s before declining sharply in the following decades (Gramlich, 2024). Despite the decline in crime rates shown in official statistics, public perceptions of crime differ from reality. In 2023, for example, 77% of American adults believed that crime had increased nationally compared with the previous year. This gap between perception and statistical evidence poses challenges to policy-making.
+      </p>
+      <p class="text-[18px] leading-relaxed">
+        Additional national data reveal geographic differences in crime rates. States such as New Mexico and Alaska have violent crime rates that are more than three times higher than those in states like Rhode Island and Connecticut. Additionally, less than half of violent and property crimes are reported to the police. As of 2022, only 36.7% of reported violent crimes and 12.1% of reported property crimes were actually solved by law enforcement. According to the FBI, nationwide clearance rates for both violent and property crime are now at their lowest levels since the early 1990s, raising public concerns about law enforcement effectiveness.
+      </p>
+    </section>
+
+    <!-- References -->
+    <section class="max-w-[800px]">
+      <h2 class="text-[18px] font-bold mb-3">References</h2>
+      <ul class="text-[18px] leading-relaxed space-y-3 list-none pl-0">
+        <li>[1] United States Department of Justice, Federal Bureau of Investigation. (2024). Crime in the United States, 2023. https://cde.ucr.cjis.gov/</li>
+        <li>[2] Gramlich, J. (2024, August 24). What the data says about crime in the U.S.. Pew Research Center. https://www.pewresearch.org/short-reads/2024/04/24/what-the-data-says-about-crime-in-the-us/</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

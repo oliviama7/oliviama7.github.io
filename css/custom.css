@@ -1,0 +1,108 @@
+/* ─── Global ─────────────────────────────────────────────── */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ─── Hero section ──────────────────────────────────────── */
+/* Desktop layout values are inline in index.html (vw-based against 1280px Figma frame). */
+/* This media query collapses the hero into a vertical stack on mobile and overrides
+   the inline absolute-positioning so elements flow naturally. */
+@media (max-width: 767px) {
+  #hero {
+    min-height: auto !important;
+    padding: 20px 24px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-bg-text {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    width: 100% !important;
+    transform: none !important;
+    white-space: normal !important;
+    margin-bottom: 16px;
+    order: 0;
+  }
+
+  .hero-portrait {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    width: 70% !important;
+    height: auto !important;
+    margin-bottom: 24px;
+    order: 1;
+  }
+
+  .hero-bio {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    width: 100% !important;
+    max-width: none !important;
+    order: 2;
+  }
+
+  .hero-bio p {
+    font-size: 16px !important;
+  }
+}
+
+/* ─── Project cards ─────────────────────────────────────── */
+.project-card {
+  height: 240px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.project-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 1023px) {
+  #projects-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .project-card {
+    height: auto;
+    aspect-ratio: 3 / 2;
+  }
+}
+
+@media (max-width: 767px) {
+  #projects-grid {
+    grid-template-columns: 1fr !important;
+  }
+  main {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+/* ─── Navbar ─────────────────────────────────────────────── */
+nav {
+  transition: transform 0.3s ease;
+}
+
+/* Bold-on-hover without layout shift:
+   ::after reserves the bold width invisibly so the layout
+   doesn't reflow when font-weight switches on hover. */
+.nav-link {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav-link::after {
+  content: attr(data-text);
+  font-weight: 700;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  pointer-events: none;
+}
+.nav-link:hover {
+  font-weight: 700;
+}

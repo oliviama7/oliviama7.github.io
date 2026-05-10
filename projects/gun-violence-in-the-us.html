@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olivia | Gun Violence in the U.S.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/custom.css">
+</head>
+<body class="pt-[178px]">
+
+  <nav class="fixed top-0 left-0 w-full bg-white z-50 h-[178px]">
+    <div class="flex items-center justify-between h-full px-[63px]">
+      <a href="../index.html">
+        <img src="../assets/images/logo.png" alt="Olivia" class="w-[70px] h-[70px] object-contain">
+      </a>
+      <ul class="hidden md:flex items-center gap-x-[50px] text-[18px] text-[#393a39]">
+        <li><a href="../index.html#consulting" class="nav-link" data-text="Consulting">Consulting</a></li>
+        <li><a href="../projects.html" class="nav-link" data-text="My Projects">My Projects</a></li>
+        <li><a href="../art.html" class="nav-link" data-text="Art">Art</a></li>
+        <li><a href="../about.html" class="nav-link" data-text="About Me">About Me</a></li>
+        <li><a href="../resume.pdf" target="_blank" class="nav-link" data-text="Resume">Resume</a></li>
+      </ul>
+      <button id="menu-toggle" class="md:hidden p-2" aria-label="Toggle menu" aria-expanded="false">
+        <div class="flex flex-col gap-1.5">
+          <span class="block w-6 h-0.5 bg-[#393a39]"></span>
+          <span class="block w-6 h-0.5 bg-[#393a39]"></span>
+          <span class="block w-6 h-0.5 bg-[#393a39]"></span>
+        </div>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden bg-white border-t border-gray-100 px-6 pb-4">
+      <ul class="flex flex-col text-[16px] text-[#393a39]">
+        <li><a href="../index.html#consulting" class="block py-3 hover:font-bold">Consulting</a></li>
+        <li><a href="../projects.html" class="block py-3 hover:font-bold">My Projects</a></li>
+        <li><a href="../art.html" class="block py-3 hover:font-bold">Art</a></li>
+        <li><a href="../about.html" class="block py-3 hover:font-bold">About Me</a></li>
+        <li><a href="../resume.pdf" target="_blank" class="block py-3 hover:font-bold">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="px-[126px] pt-10 pb-24 max-w-[1280px] mx-auto text-[#393a39]">
+
+    <h1 class="text-[25px] font-bold mb-6">Gun Violence in the U.S.</h1>
+
+    <p class="text-[18px] leading-relaxed mb-10 max-w-[800px]">
+      Gun violence is an important metric for evaluating both the effectiveness of gun control laws and the socio-economic conditions of a region. This project compares state-level gun violence incidence rates, examines patterns within Illinois from 2014 to 2017, and considers disparities in gun regulation across states and between countries.
+    </p>
+
+    <!-- Tableau embed -->
+    <div class="mb-14 max-w-[900px] mx-auto">
+      <div class='tableauPlaceholder' id='viz1778398068307' style='position: relative'>
+        <noscript><a href='#'><img alt='Dashboard 1' src='https://public.tableau.com/static/images/EC/ECON120Project4GunViolence/Dashboard1/1_rss.png' style='border: none' /></a></noscript>
+        <object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='ECON120Project4GunViolence/Dashboard1' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https://public.tableau.com/static/images/EC/ECON120Project4GunViolence/Dashboard1/1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en-US' />
+        </object>
+      </div>
+      <script type='text/javascript'>
+        var divElement = document.getElementById('viz1778398068307');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        if (divElement.offsetWidth > 800) { vizElement.style.width='850px'; vizElement.style.height='1127px'; }
+        else if (divElement.offsetWidth > 500) { vizElement.style.width='850px'; vizElement.style.height='1127px'; }
+        else { vizElement.style.width='100%'; vizElement.style.height='1527px'; }
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+      </script>
+    </div>
+
+    <!-- Methodology and Data Sources -->
+    <section class="mb-8 max-w-[800px]">
+      <h2 class="text-[18px] font-bold mb-3">Methodology and Data Sources</h2>
+      <p class="text-[18px] leading-relaxed">
+        Data are drawn from the Gun Violence Archive, which provides comprehensive statistics on gun-related incidents in the United States from 2014 to 2017. To ensure comparability across states, incidence rates are standardized as per 100,000 residents. Population data are sourced from the U.S. Census Bureau's state population totals.
+      </p>
+    </section>
+
+    <!-- Measure Descriptions -->
+    <section class="mb-8 max-w-[800px]">
+      <h2 class="text-[18px] font-bold mb-3">Measure Descriptions</h2>
+      <p class="text-[18px] leading-relaxed mb-3">The analysis focuses on two measures related to gun violence:</p>
+      <ol class="list-decimal list-inside text-[18px] leading-relaxed space-y-2 pl-2">
+        <li><strong>Gun violence incidents:</strong> Events resulting in injury or fatality caused by a firearm. Incidents without injury or fatality are excluded.</li>
+        <li><strong>Gun violence incidence rate:</strong> The number of gun violence incidents per 100,000 residents.</li>
+      </ol>
+    </section>
+
+    <!-- Comparative Trends and Analysis -->
+    <section class="mb-8 max-w-[800px]">
+      <h2 class="text-[18px] font-bold mb-3">Comparative Trends and Analysis</h2>
+      <p class="text-[18px] leading-relaxed mb-4">
+        From 2014 to 2017, gun violence incidence rates show clear regional differences across the nation. Southern and Midwestern states consistently report higher rates, with Louisiana and Illinois reaching 37.1 and 35.9 incidents per 100,000 residents, respectively, in 2017. In contrast, Western and Northeastern states maintain comparatively lower rates. While these regional patterns remain stable over time, most states experienced an overall increase in incidence rates during this period.
+      </p>
+      <p class="text-[18px] leading-relaxed mb-4">
+        Within Illinois, gun-related incidents show distinct temporal patterns. Incidents occur more frequently on weekends and between April and October, with Sundays in August recording the highest number of incidents (378 cases across the observed years). These patterns may reflect increased social activity and mobility during weekends and warmer months, which can increase the likelihood of interpersonal conflict and criminal activity.
+      </p>
+      <p class="text-[18px] leading-relaxed">
+        Across all states, the top ten highest incidence rates from 2014 to 2017 consistently include Louisiana, Illinois, Delaware, Mississippi, Alabama, Tennessee, Missouri, South Carolina, Maryland, and Alaska. Illinois remains among the top three throughout this period. Notably, Illinois enforces relatively strict gun control laws, including the Firearm Owner's Identification (FOID) card, Concealed Carry Licenses (CCL), and regulations on firearm transport (Koester, 2025). However, these restrictions may contribute to unintended consequences, such as the illegal trafficking of firearms from neighboring states with more lenient regulations (Bowman, 2018). This complicates gun-related law enforcement, as illegal firearms are more difficult to track and regulate. Additionally, high-density urban areas such as the Chicago metropolitan region likely contribute to increased incidence rates because of population concentration and increased social interaction.
+      </p>
+    </section>
+
+    <!-- Literature Review and National Context -->
+    <section class="mb-10 max-w-[800px]">
+      <h2 class="text-[18px] font-bold mb-3">Literature Review and National Context</h2>
+      <p class="text-[18px] leading-relaxed mb-4">
+        A key disparity between the United States and Canada lies in how gun ownership is conceptualized and regulated (Lukiv, 2026). In the United States, gun ownership is constitutionally protected under the Second Amendment, limiting the extent to which federal and state governments can impose gun control laws. In contrast, Canada treats gun ownership as a regulated privilege, requiring licensing, safety training, and comprehensive background checks. Certain firearms, including assault-style weapons, are banned, and there is even a national freeze on handgun sales.
+      </p>
+      <p class="text-[18px] leading-relaxed mb-4">
+        This fundamental difference shapes policy flexibility and gun violence outcomes. In Canada, policy responses could be more centralized and aggressive in gun control, whereas U.S. policymakers face legal and political constraints. These differences are reflected in outcomes: mass shootings are significantly less frequent in Canada, and about 38% of homicides involve firearms, compared to 78.5% in the United States.
+      </p>
+      <p class="text-[18px] leading-relaxed mb-4">
+        Both countries have implemented gun buyback programs aimed at reducing the number of firearms in circulation; however, their effectiveness remains limited. In the United States, such programs are often ineffective due to the highly elastic supply of guns, meaning that reductions in supply through buybacks do not actually change market incentives. Similarly, a Canadian pilot buyback program that aimed to collect 200 firearms ultimately collected only 26.
+      </p>
+      <p class="text-[18px] leading-relaxed">
+        Overall, regional disparities, structural enforcement challenges, and underlying regulatory frameworks highlight the complexity of addressing gun violence in the United States. Policy effectiveness depends not only on regulation but also on social, economic, and political conditions.
+      </p>
+    </section>
+
+    <!-- References -->
+    <section class="max-w-[800px]">
+      <h2 class="text-[18px] font-bold mb-3">References</h2>
+      <ul class="text-[18px] leading-relaxed space-y-3 list-none pl-0">
+        <li>[1] Bowman, B. (2018, August 13). <em>Where Do Guns Used to Commit Shootings in Chicago Come From?</em> The Globe Post. https://theglobepost.com/2018/08/13/gun-violence-chicago/</li>
+        <li>[2] Gun Violence Archive. (2018). <em>Gun Violence Archive</em>. https://www.gunviolencearchive.org</li>
+        <li>[3] Koester, J. J. (2025, June 5). <em>Illinois Gun Laws - All You Need to Know</em>. The Law Office of Jessica Koester, LLC. https://www.koester-law.com/blog/illinois-gun-laws/</li>
+        <li>[4] Lukiv, J. (2026, February 11). <em>What are Canada's gun ownership laws?</em> BBC News. https://www.bbc.com/news/articles/cwy8eyz4ee0o</li>
+        <li>[5] US Census Bureau. (2021). <em>State Population Totals: 2014-2017</em>. The United States Census Bureau. https://www.census.gov/data/datasets/time-series/demo/popest/2010s-state-total.html</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

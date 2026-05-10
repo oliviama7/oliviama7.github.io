@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olivia | My Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="pt-[178px]">
+
+  <nav class="fixed top-0 left-0 w-full bg-white z-50 h-[178px]">
+    <div class="flex items-center justify-between h-full px-[63px]">
+      <a href="index.html">
+        <img src="assets/images/logo.png" alt="Olivia" class="w-[70px] h-[70px] object-contain">
+      </a>
+      <ul class="hidden md:flex items-center gap-x-[50px] text-[18px] text-[#393a39]">
+        <li><a href="index.html#consulting" class="nav-link" data-text="Consulting">Consulting</a></li>
+        <li><a href="projects.html" class="nav-link" data-text="My Projects">My Projects</a></li>
+        <li><a href="art.html" class="nav-link" data-text="Art">Art</a></li>
+        <li><a href="about.html" class="nav-link" data-text="About Me">About Me</a></li>
+        <li><a href="resume.pdf" target="_blank" class="nav-link" data-text="Resume">Resume</a></li>
+      </ul>
+      <button id="menu-toggle" class="md:hidden p-2" aria-label="Toggle menu" aria-expanded="false">
+        <div class="flex flex-col gap-1.5">
+          <span class="block w-6 h-0.5 bg-[#393a39]"></span>
+          <span class="block w-6 h-0.5 bg-[#393a39]"></span>
+          <span class="block w-6 h-0.5 bg-[#393a39]"></span>
+        </div>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden bg-white border-t border-gray-100 px-6 pb-4">
+      <ul class="flex flex-col text-[16px] text-[#393a39]">
+        <li><a href="index.html#consulting" class="block py-3 hover:font-bold">Consulting</a></li>
+        <li><a href="projects.html" class="block py-3 hover:font-bold">My Projects</a></li>
+        <li><a href="art.html" class="block py-3 hover:font-bold">Art</a></li>
+        <li><a href="about.html" class="block py-3 hover:font-bold">About Me</a></li>
+        <li><a href="resume.pdf" target="_blank" class="block py-3 hover:font-bold">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="px-[63px] pt-8 pb-24">
+    <h1 class="text-[25px] font-bold text-[#393a39] mb-4">My Projects</h1>
+    <p class="text-[18px] text-[#393a39] max-w-[728px] leading-normal mb-16">
+      These projects that I worked at school reflect my journeys in economics, CS, and design, and each question stretched my thinking in a new direction. They taught me that curiosity and persistence can support me further than I'd expect!
+    </p>
+
+    <!-- Tableau section -->
+    <h2 class="text-[20px] font-semibold text-[#1f77b4] mb-2">Tableau</h2>
+    <div id="projects-grid" class="grid gap-[37px]" style="grid-template-columns: repeat(3, 360px);">
+
+      <a href="projects/crime-trends-in-the-us.html" class="project-card block relative overflow-hidden">
+        <img src="assets/images/crime-trends-us.png" alt="Crime Trends in the U.S."
+             class="absolute inset-0 w-full h-full object-cover opacity-30">
+        <div class="absolute inset-0 flex items-center justify-center">
+          <p class="text-center text-black text-[20px] font-medium leading-normal w-[250px]"
+             style="letter-spacing: -1px;">Crime Trends in the U.S.</p>
+        </div>
+      </a>
+
+      <a href="projects/global-patterns-of-terrorism.html" class="project-card block relative overflow-hidden">
+        <img src="assets/images/global-terrorism.png" alt="Global Patterns of Terrorism"
+             class="absolute inset-0 w-full h-full object-cover opacity-30">
+        <div class="absolute inset-0 flex items-center justify-center">
+          <p class="text-center text-black text-[20px] font-medium leading-normal w-[250px]"
+             style="letter-spacing: -1px;">Global Patterns of Terrorism</p>
+        </div>
+      </a>
+
+      <a href="projects/gun-violence-in-the-us.html" class="project-card block relative overflow-hidden">
+        <img src="assets/images/gun-violence-us.png" alt="Gun Violence in the U.S."
+             class="absolute inset-0 w-full h-full object-cover opacity-30">
+        <div class="absolute inset-0 flex items-center justify-center">
+          <p class="text-center text-black text-[20px] font-medium leading-normal w-[250px]"
+             style="letter-spacing: -1px;">Gun Violence in the U.S.</p>
+        </div>
+      </a>
+
+      <a href="projects/human-trafficking.html" class="project-card block relative overflow-hidden">
+        <img src="assets/images/human-trafficking.png" alt="Human Trafficking"
+             class="absolute inset-0 w-full h-full object-cover opacity-30">
+        <div class="absolute inset-0 flex items-center justify-center">
+          <p class="text-center text-black text-[20px] font-medium leading-normal w-[250px]"
+             style="letter-spacing: -1px;">Human Trafficking</p>
+        </div>
+      </a>
+
+      <a href="projects/incarceration-in-illinois.html" class="project-card block relative overflow-hidden">
+        <img src="assets/images/incarceration-illinois.png" alt="Incarceration in Illinois"
+             class="absolute inset-0 w-full h-full object-cover opacity-30">
+        <div class="absolute inset-0 flex items-center justify-center">
+          <p class="text-center text-black text-[20px] font-medium leading-normal w-[250px]"
+             style="letter-spacing: -1px;">Incarceration in Illinois</p>
+        </div>
+      </a>
+
+      <a href="projects/campus-crime-in-illinois.html" class="project-card block relative overflow-hidden">
+        <img src="assets/images/campus-crime-illinois.png" alt="Campus Crime in Illinois"
+             class="absolute inset-0 w-full h-full object-cover opacity-30">
+        <div class="absolute inset-0 flex items-center justify-center">
+          <p class="text-center text-black text-[20px] font-medium leading-normal w-[250px]"
+             style="letter-spacing: -1px;">Campus Crime in Illinois</p>
+        </div>
+      </a>
+
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

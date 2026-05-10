@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olivia | Incarceration in Illinois</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/custom.css">
+</head>
+<body class="pt-[178px]">
+
+  <nav class="fixed top-0 left-0 w-full bg-white z-50 h-[178px]">
+    <div class="flex items-center justify-between h-full px-[63px]">
+      <a href="../index.html">
+        <img src="../assets/images/logo.png" alt="Olivia" class="w-[70px] h-[70px] object-contain">
+      </a>
+      <ul class="hidden md:flex items-center gap-x-[50px] text-[18px] text-[#393a39]">
+        <li><a href="../index.html#consulting" class="nav-link" data-text="Consulting">Consulting</a></li>
+        <li><a href="../projects.html" class="nav-link" data-text="My Projects">My Projects</a></li>
+        <li><a href="../art.html" class="nav-link" data-text="Art">Art</a></li>
+        <li><a href="../about.html" class="nav-link" data-text="About Me">About Me</a></li>
+        <li><a href="../resume.pdf" target="_blank" class="nav-link" data-text="Resume">Resume</a></li>
+      </ul>
+      <button id="menu-toggle" class="md:hidden p-2" aria-label="Toggle menu" aria-expanded="false">
+        <div class="flex flex-col gap-1.5">
+          <span class="block w-6 h-0.5 bg-[#393a39]"></span>
+          <span class="block w-6 h-0.5 bg-[#393a39]"></span>
+          <span class="block w-6 h-0.5 bg-[#393a39]"></span>
+        </div>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden bg-white border-t border-gray-100 px-6 pb-4">
+      <ul class="flex flex-col text-[16px] text-[#393a39]">
+        <li><a href="../index.html#consulting" class="block py-3 hover:font-bold">Consulting</a></li>
+        <li><a href="../projects.html" class="block py-3 hover:font-bold">My Projects</a></li>
+        <li><a href="../art.html" class="block py-3 hover:font-bold">Art</a></li>
+        <li><a href="../about.html" class="block py-3 hover:font-bold">About Me</a></li>
+        <li><a href="../resume.pdf" target="_blank" class="block py-3 hover:font-bold">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="px-[126px] pt-10 pb-24 max-w-[1280px] mx-auto text-[#393a39]">
+
+    <h1 class="text-[25px] font-bold mb-6">Incarceration in Illinois</h1>
+
+    <p class="text-[18px] leading-relaxed mb-10 max-w-[800px]">
+      Incarceration rates, measured through prison and jail population rates, are key indicators for analyzing the economics of crime and public policy. This project examines county-level incarceration patterns in Illinois, comparing prison and jail population rates across counties in 2019 and evaluates long-term trends from 1983 to 2019, providing insight into incapacitation approaches and policy-making in the criminal justice system.
+    </p>
+
+    <!-- Tableau embed -->
+    <div class="mb-14 max-w-[900px] mx-auto">
+      <div class='tableauPlaceholder' id='viz1778398005418' style='position: relative'>
+        <noscript><a href='#'><img alt='Dashboard 2' src='https://public.tableau.com/static/images/EC/ECON120Project2/Dashboard2/1_rss.png' style='border: none' /></a></noscript>
+        <object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='ECON120Project2/Dashboard2' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https://public.tableau.com/static/images/EC/ECON120Project2/Dashboard2/1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en-US' />
+        </object>
+      </div>
+      <script type='text/javascript'>
+        var divElement = document.getElementById('viz1778398005418');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        if (divElement.offsetWidth > 800) { vizElement.style.width='850px'; vizElement.style.height='1127px'; }
+        else if (divElement.offsetWidth > 500) { vizElement.style.width='850px'; vizElement.style.height='1127px'; }
+        else { vizElement.style.width='100%'; vizElement.style.height='1677px'; }
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+      </script>
+    </div>
+
+    <!-- Methodology and Data Sources -->
+    <section class="mb-8 max-w-[800px]">
+      <h2 class="text-[18px] font-bold mb-3">Methodology and Data Sources</h2>
+      <p class="text-[18px] leading-relaxed mb-4">
+        State-level incarceration data were sourced from the Vera Institute of Justice, which compiles statistics from the Bureau of Justice Statistics. This dataset includes Illinois incarceration rates from 1970 to 2024. For cross-county comparisons, this study focuses on 2019, the most recent year with complete data for all Illinois counties. Long-term trends are analyzed from 1983 to 2019, the period with mostly consistent county-level reporting.
+      </p>
+      <p class="text-[18px] leading-relaxed">
+        All measures are normalized as rates per 100,000 residents. Comparing raw counts without adjusting for population would bias results toward more populous counties. The dataset also classifies counties as rural, small/mid, suburban, or urban for geographic comparison.
+      </p>
+    </section>
+
+    <!-- Measure Descriptions -->
+    <section class="mb-8 max-w-[800px]">
+      <h2 class="text-[18px] font-bold mb-3">Measure Descriptions</h2>
+      <p class="text-[18px] leading-relaxed mb-3">
+        The analysis focuses on two primary variables. It is important to distinguish them because they reflect different stages of the criminal justice process and respond differently to policy changes.
+      </p>
+      <ol class="list-decimal list-inside text-[18px] leading-relaxed space-y-2 pl-2">
+        <li><strong>Prison population rate (per 100,000 residents):</strong> Prisons house individuals who have been convicted, typically serving sentences longer than one year. Because sentences are longer, prison populations are relatively stable.</li>
+        <li><strong>Jail population rate (per 100,000 residents):</strong> Jails hold individuals awaiting trial or serving short sentences, producing more frequent fluctuations due to arrests and releases.</li>
+      </ol>
+    </section>
+
+    <!-- Comparative Trends and Analysis -->
+    <section class="mb-8 max-w-[800px]">
+      <h2 class="text-[18px] font-bold mb-3">Comparative Trends and Analysis</h2>
+      <p class="text-[18px] leading-relaxed mb-4">
+        In 2019, incarceration rates varied widely across Illinois counties. Pulaski County was a clear outlier in jail population rates, reporting 6,623 per 100,000 residents. Although classified as rural, Pulaski County contracted with Immigration and Customs Enforcement (ICE) to house immigration detainees. Until 2020 when the contract terminated, most individuals held at the Pulaski County Detention Center were federal detainees rather than locally arrested residents (Parker, 2020). This explains the unusually high jail rate and illustrates how facility contracts can misrepresent county-level incarceration statistics.
+      </p>
+      <p class="text-[18px] leading-relaxed mb-4">
+        Prison population rates were more stable but still showed significant variation. Jefferson County reported the highest prison rate in 2019 at 1,329 per 100,000 residents. The county houses Big Muddy Correctional Center, a medium-security facility designated to hold individuals civilly committed as sexually dangerous persons (John Howard Association of Illinois, n.d.). Across Illinois, rural and small/mid counties generally show higher prison population rates, likely reflecting the geographic locations of correctional facilities rather than higher local crime incidence. Additionally, across most counties in 2019, prison population rates exceeded jail population rates.
+      </p>
+      <p class="text-[18px] leading-relaxed">
+        Long-term trends from 1983 to 2019 show an increase in incarceration rates beginning in the late 20th century, consistent with national tougher crime policies and sentencing reforms. These increases reflect broader structural shifts in policing, sentencing laws, and enforcement.
+      </p>
+    </section>
+
+    <!-- Literature Review and National Context -->
+    <section class="mb-10 max-w-[800px]">
+      <h2 class="text-[18px] font-bold mb-3">Literature Review and National Context</h2>
+      <p class="text-[18px] leading-relaxed mb-4">
+        National incarceration data diverge from Illinois trends. In 2019, the U.S. incarceration rate fell to 810 per 100,000 people, the lowest level since 1995 (Gramlich, 2021). Nationally, incarceration has declined because of less violent and property crimes, falling arrest rates, sentencing reforms, and policy efforts to reduce prison populations. The declining incarceration rate also confirms the deterrence and incapacitation effect of prison. With the expected result of prison sentences, criminals stop future crimes given the severity of punishment. Prisons can also physically incapacitate repeat offenders from committing crimes.
+      </p>
+      <p class="text-[18px] leading-relaxed mb-4">
+        International comparisons further highlight the scale of U.S. incarceration. As of 2018, the United States had the highest incarceration rates globally at 639 per 100,000 residents, significantly higher than Western European countries and other developed nations (Gramlich, 2021). This broader context indicates that U.S. incarceration levels reflect institutional and policy differences rather than crime and criminal behavior.
+      </p>
+      <p class="text-[18px] leading-relaxed mb-4">
+        Compared to the national and world averages, Illinois shows incarceration rates above the average. Chicago is the most populated city in Illinois and the Midwestern United States and reported a crime rate of 3,926 per 100,000 people (Chicago Police Department, 2022). From an economic perspective, other factors contributing to Illinois' elevated incarceration rates are maternal education, income levels, and policing strategies. Access to abortion will result in better maternal education, which in turn benefits the next generation committing less crimes. Income levels vary largely by zip code, demographics, and regions. Increasing police forces and maintaining facilities increase the certainty and severity of punishment, but that additional cost takes the funding away from education, social services, or crime prevention programs.
+      </p>
+      <p class="text-[18px] leading-relaxed">
+        When situated within national and international trends, Illinois reflects broader U.S. patterns of high incarceration alongside recent declines. County-level analysis provides valuable insight into how local policies contribute to the criminal justice system, and states and counties should seek to improve the economic and social wellbeing of all of its residents, including those imprisoned.
+      </p>
+    </section>
+
+    <!-- References -->
+    <section class="max-w-[800px]">
+      <h2 class="text-[18px] font-bold mb-3">References</h2>
+      <ul class="text-[18px] leading-relaxed space-y-3 list-none pl-0">
+        <li>[1] Chicago Police Department. (2022). <em>2021 Year End Summary Crime Statistics</em> [Archived report]. https://web.archive.org/web/20220715025318/https://home.chicagopolice.org/statistics-data/crime-statistics/</li>
+        <li>[2] Gramlich, J. (2021, August 16). <em>America's Incarceration Rate Falls to Lowest Level since 1995</em>. Pew Research Center. https://www.pewresearch.org/short-reads/2021/08/16/americas-incarceration-rate-lowest-since-1995/</li>
+        <li>[3] John Howard Association of Illinois. (n.d.). <em>Big Muddy Correctional Center</em>. The John Howard Association of Illinois. Retrieved February 19, 2026, from https://www.thejha.org/facilities/big-muddy-correctional-center</li>
+        <li>[4] Parker, M. (2020). <em>Interim Dean Cindy Buys, discusses the impact of COVID-19 on federal detainees at the Pulaski County Detention Center in Ullin, IL</em>. Simmons Law School. https://law.siu.edu/about/news/2020/04-10-2020.php</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

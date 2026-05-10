@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olivia | Campus Crime in Illinois</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/custom.css">
+</head>
+<body class="pt-[178px]">
+
+  <nav class="fixed top-0 left-0 w-full bg-white z-50 h-[178px]">
+    <div class="flex items-center justify-between h-full px-[63px]">
+      <a href="../index.html">
+        <img src="../assets/images/logo.png" alt="Olivia" class="w-[70px] h-[70px] object-contain">
+      </a>
+      <ul class="hidden md:flex items-center gap-x-[50px] text-[18px] text-[#393a39]">
+        <li><a href="../index.html#consulting" class="nav-link" data-text="Consulting">Consulting</a></li>
+        <li><a href="../projects.html" class="nav-link" data-text="My Projects">My Projects</a></li>
+        <li><a href="../art.html" class="nav-link" data-text="Art">Art</a></li>
+        <li><a href="../about.html" class="nav-link" data-text="About Me">About Me</a></li>
+        <li><a href="../resume.pdf" target="_blank" class="nav-link" data-text="Resume">Resume</a></li>
+      </ul>
+      <button id="menu-toggle" class="md:hidden p-2" aria-label="Toggle menu" aria-expanded="false">
+        <div class="flex flex-col gap-1.5">
+          <span class="block w-6 h-0.5 bg-[#393a39]"></span>
+          <span class="block w-6 h-0.5 bg-[#393a39]"></span>
+          <span class="block w-6 h-0.5 bg-[#393a39]"></span>
+        </div>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden bg-white border-t border-gray-100 px-6 pb-4">
+      <ul class="flex flex-col text-[16px] text-[#393a39]">
+        <li><a href="../index.html#consulting" class="block py-3 hover:font-bold">Consulting</a></li>
+        <li><a href="../projects.html" class="block py-3 hover:font-bold">My Projects</a></li>
+        <li><a href="../art.html" class="block py-3 hover:font-bold">Art</a></li>
+        <li><a href="../about.html" class="block py-3 hover:font-bold">About Me</a></li>
+        <li><a href="../resume.pdf" target="_blank" class="block py-3 hover:font-bold">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="px-[126px] pt-10 pb-24 max-w-[1280px] mx-auto text-[#393a39]">
+
+    <h1 class="text-[25px] font-bold mb-6">Campus Crime in Illinois</h1>
+
+    <p class="text-[18px] leading-relaxed mb-10 max-w-[800px]">
+      Maintaining a crime-free campus requires finding an equilibrium between the costs of crime and the costs of prevention. This project analyzes crime trends across the five largest university campuses in Illinois from 2019 to 2023. By examining sexual misconduct, aggravated assault, and burglary, this study provides insights into institutional safety and resource allocation.
+    </p>
+
+    <!-- Tableau embed -->
+    <div class="mb-14 max-w-[900px] mx-auto">
+      <div class='tableauPlaceholder' id='viz1778374706196' style='position: relative'>
+        <noscript><a href='#'><img alt='Dashboard 1' src='https://public.tableau.com/static/images/Pr/Project1_17783034182890/Dashboard1/1_rss.png' style='border: none' /></a></noscript>
+        <object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='Project1_17783034182890/Dashboard1' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https://public.tableau.com/static/images/Pr/Project1_17783034182890/Dashboard1/1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en-US' />
+        </object>
+      </div>
+      <script type='text/javascript'>
+        var divElement = document.getElementById('viz1778374706196');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        if (divElement.offsetWidth > 800) { vizElement.style.width='850px'; vizElement.style.height='1127px'; }
+        else if (divElement.offsetWidth > 500) { vizElement.style.width='850px'; vizElement.style.height='1127px'; }
+        else { vizElement.style.width='100%'; vizElement.style.height='1377px'; }
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+      </script>
+    </div>
+
+    <!-- Methodology and Data Sources -->
+    <section class="mb-8 max-w-[800px]">
+      <h2 class="text-[18px] font-bold mb-3">Methodology and Data Sources</h2>
+      <p class="text-[18px] leading-relaxed">
+        Data were sourced from the U.S. Department of Education Campus Safety and Security Program. To ensure consistency, this analysis focuses on the main campuses of the five largest four-year, degree-granting public and private nonprofit institutions in Illinois that offer on-campus housing. Only main campuses were selected because satellite locations (e.g., medical schools) often represent specific demographics that may not accurately reflect overall campus crime patterns. This analysis uses normalized metrics of rates per 100,000 students since comparing raw numbers without adjusting for population could be misleading because larger schools would naturally have more incidents than smaller schools.
+      </p>
+    </section>
+
+    <!-- Measure Descriptions -->
+    <section class="mb-8 max-w-[800px]">
+      <h2 class="text-[18px] font-bold mb-3">Measure Descriptions</h2>
+      <p class="text-[18px] leading-relaxed mb-3">The analysis focuses on three primary variables:</p>
+      <ol class="list-decimal list-inside text-[18px] leading-relaxed space-y-2 pl-2">
+        <li>Sexual Misconduct: includes cases of fondling, incest, rape, and statutory rape.</li>
+        <li>Aggravated assault: an attack by one individual against another for the purpose of inflicting severe or aggravated bodily injury; this differs from the broader definition of assault, which typically involves minor injuries or threats without weapons (Scheuerman, 2025).</li>
+        <li>Burglary: a property crime involving unlawful entry where no injury happens, distinct from robbery, which involves force against a victim.</li>
+      </ol>
+    </section>
+
+    <!-- Comparative Trends and Analysis -->
+    <section class="mb-8 max-w-[800px]">
+      <h2 class="text-[18px] font-bold mb-3">Comparative Trends and Analysis</h2>
+      <p class="text-[18px] leading-relaxed mb-4">
+        All five schools reported sexual misconduct rates below 100 per 100,000 students. Most institutions saw a notable decline from 2019 to 2021, likely reflecting reduced on-campus population and activity during the COVID pandemic. After that, we see a clear increase across all five schools in 2022 as campuses reopened and in-person activity resumed. Illinois State consistently reported the highest rates, while UI Chicago reported the lowest across all five years.
+      </p>
+      <p class="text-[18px] leading-relaxed">
+        In contrast to sexual misconduct trends, UI Chicago reported the highest average annual rates for both aggravated assault (15.49 per 100,000) and burglary (32.31 per 100,000). Northwestern reported the lowest averages in both categories (2.04 and 8.63, respectively). With low sexual misconduct but high assault and burglary rates at UI Chicago, campus location and urban density may influence certain crime types more than general campus safety levels perceived by the public.
+      </p>
+    </section>
+
+    <!-- Literature Review and National Context -->
+    <section class="mb-10 max-w-[800px]">
+      <h2 class="text-[18px] font-bold mb-3">Literature Review and National Context</h2>
+      <p class="text-[18px] leading-relaxed mb-4">
+        The difficulty in addressing campus crime is often rooted in underreporting and public perception. Historical analysis from The New York Times indicates that while violent crime rates remained relatively stable throughout the 1980s, public awareness of these crimes increased because of high-profile incidents and negligence lawsuits. This forced a shift from the image of campuses as "safe, idyllic" places to "extensions of the real world" (Purdum, 1988). Alcohol is a primary catalyst, and some administrators estimate that 100% of their sexual assault cases are alcohol-related.
+      </p>
+      <p class="text-[18px] leading-relaxed mb-4">
+        Modern research confirms these challenges. A systematic review of data from 2000 to 2015 highlights that while prevalence rates vary due to methodology, a substantial proportion of students experience sexual victimization (Fedina et al., 2016). Specifically, unwanted sexual contact is more prevalent than forcible rape. Vulnerable groups, including underclassmen, sexual minorities, and students with disabilities, face significantly higher risks.
+      </p>
+      <p class="text-[18px] leading-relaxed mb-4">
+        Nationally, 2021 data from the National Center for Education Statistics (NCES, 2024) shows that 44% of on-campus crimes were forcible sex offenses, with a national average of 75 cases per 100,000 students. Illinois institutions, such as Illinois State, generally remain below this national average with 44.48 cases per 100,000 students. However, the NCES also notes the presence of residence halls on campus might indicate higher rates of on-campus crime; thus, colleges that provide 4-year housing or are more residential might have higher crime rates. The national statistics on crimes also provide data about the number of arrests and referrals for disciplinary action made on campus for violations of liquor and drug laws and illegal weapons possession. All of these incidents see a trend of decline from 2011 to 2021.
+      </p>
+      <p class="text-[18px] leading-relaxed">
+        From an economic perspective, crime occurs when rational criminals decide that the benefits outweigh the expected costs. Universities can influence this calculation by increasing the certainty of punishment, the severity of punishment, or through prevention programs that reduce opportunities for crime. However, these measures require financial resources, making efficient allocation essential. Analyzing normalized crime rates and comparing them to national statistics allow institutions to evaluate whether existing security investments are effective or need adjustment. While national averages provide useful context, each campus faces unique conditions related to size, location, and student demographics. Therefore, historical crime data should be used as a guide rather than a prescription. Ultimately, universities must seek strategies that minimize crime while using the fewest resources possible, achieving an efficient balance between safety and cost.
+      </p>
+    </section>
+
+    <!-- References -->
+    <section class="max-w-[800px]">
+      <h2 class="text-[18px] font-bold mb-3">References</h2>
+      <ul class="text-[18px] leading-relaxed space-y-3 list-none pl-0">
+        <li>[1] Fedina, L., Holmes, J. L., &amp; Backes, B. (2016). <em>How prevalent is campus sexual assault in the United States?</em> National Institute of Justice Journal, (277), 1-7. https://www.ojp.gov/pdffiles1/nij/249827.pdf</li>
+        <li>[2] National Center for Education Statistics. (2024). Criminal Incidents at Postsecondary Institutions. <em>Condition of Education</em>. U.S. Department of Education, Institute of Education Sciences. Retrieved February 5, 2026, from https://nces.ed.gov/programs/coe/indicator/a21.</li>
+        <li>[3] Purdum, T. S. (1988, April 10). The reality of crime on campus. <em>The New York Times</em>. https://www.nytimes.com/1988/04/10/education/the-reality-of-crime-on-campus.html</li>
+        <li>[4] Scheuerman, M. (2025). <em>Simple Assault vs Aggravated Assault</em>. Scheuerman Law LLC. https://www.scheuermanlaw.com/blog/simple-assault-vs-aggravated-assault/</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olivia | Global Patterns of Terrorism</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/custom.css">
+</head>
+<body class="pt-[178px]">
+
+  <nav class="fixed top-0 left-0 w-full bg-white z-50 h-[178px]">
+    <div class="flex items-center justify-between h-full px-[63px]">
+      <a href="../index.html">
+        <img src="../assets/images/logo.png" alt="Olivia" class="w-[70px] h-[70px] object-contain">
+      </a>
+      <ul class="hidden md:flex items-center gap-x-[50px] text-[18px] text-[#393a39]">
+        <li><a href="../index.html#consulting" class="nav-link" data-text="Consulting">Consulting</a></li>
+        <li><a href="../projects.html" class="nav-link" data-text="My Projects">My Projects</a></li>
+        <li><a href="../art.html" class="nav-link" data-text="Art">Art</a></li>
+        <li><a href="../about.html" class="nav-link" data-text="About Me">About Me</a></li>
+        <li><a href="../resume.pdf" target="_blank" class="nav-link" data-text="Resume">Resume</a></li>
+      </ul>
+      <button id="menu-toggle" class="md:hidden p-2" aria-label="Toggle menu" aria-expanded="false">
+        <div class="flex flex-col gap-1.5">
+          <span class="block w-6 h-0.5 bg-[#393a39]"></span>
+          <span class="block w-6 h-0.5 bg-[#393a39]"></span>
+          <span class="block w-6 h-0.5 bg-[#393a39]"></span>
+        </div>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden bg-white border-t border-gray-100 px-6 pb-4">
+      <ul class="flex flex-col text-[16px] text-[#393a39]">
+        <li><a href="../index.html#consulting" class="block py-3 hover:font-bold">Consulting</a></li>
+        <li><a href="../projects.html" class="block py-3 hover:font-bold">My Projects</a></li>
+        <li><a href="../art.html" class="block py-3 hover:font-bold">Art</a></li>
+        <li><a href="../about.html" class="block py-3 hover:font-bold">About Me</a></li>
+        <li><a href="../resume.pdf" target="_blank" class="block py-3 hover:font-bold">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="px-[126px] pt-10 pb-24 max-w-[1280px] mx-auto text-[#393a39]">
+
+    <h1 class="text-[25px] font-bold mb-6">Global Patterns of Terrorism</h1>
+
+    <p class="text-[18px] leading-relaxed mb-10 max-w-[800px]">
+      Terrorism is a complex and evolving global problem that varies widely across regions, time periods, and motivations. By analyzing long-term data trends and examining specific case studies, this project explores how patterns of terrorism reflect broader political conflicts, highlighting the difficulty of predicting who becomes a terrorist.
+    </p>
+
+    <!-- Tableau embed -->
+    <div class="mb-14 max-w-[900px] mx-auto">
+      <div class='tableauPlaceholder' id='viz1778398102519' style='position: relative'>
+        <noscript><a href='#'><img alt='Dashboard 5' src='https://public.tableau.com/static/images/Gl/GlobalPatternsofTerrorism/Dashboard5/1_rss.png' style='border: none' /></a></noscript>
+        <object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='GlobalPatternsofTerrorism/Dashboard5' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https://public.tableau.com/static/images/Gl/GlobalPatternsofTerrorism/Dashboard5/1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en-US' />
+        </object>
+      </div>
+      <script type='text/javascript'>
+        var divElement = document.getElementById('viz1778398102519');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        if (divElement.offsetWidth > 800) { vizElement.style.width='850px'; vizElement.style.height='1127px'; }
+        else if (divElement.offsetWidth > 500) { vizElement.style.width='850px'; vizElement.style.height='1127px'; }
+        else { vizElement.style.width='100%'; vizElement.style.height='1877px'; }
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+      </script>
+    </div>
+
+    <!-- Methodology and Data Sources -->
+    <section class="mb-8 max-w-[800px]">
+      <h2 class="text-[18px] font-bold mb-3">Methodology and Data Sources</h2>
+      <p class="text-[18px] leading-relaxed">
+        Data were collected from the University of Maryland's Global Terrorism Database (GTD), which includes over 200,000 recorded incidents and provides a comprehensive overview of terrorist activity from 1970 to 2019. Regional classifications follow the dataset's global region categories.
+      </p>
+    </section>
+
+    <!-- Measure Descriptions -->
+    <section class="mb-8 max-w-[800px]">
+      <h2 class="text-[18px] font-bold mb-3">Measure Descriptions</h2>
+      <p class="text-[18px] leading-relaxed mb-3">The analysis focuses on terrorist incidents and six types of attacks:</p>
+      <ol class="list-decimal list-inside text-[18px] leading-relaxed space-y-2 pl-2">
+        <li><strong>Terrorist incidents:</strong> Events that are intentional, involve some level of violence, and are carried out by sub-national actors.</li>
+        <li><strong>Types of attacks:</strong> Bombing/explosion, armed assault, assassination, hostage taking (including both related subcategories), facility/infrastructure attack, and other (less common types such as hijacking, unarmed assault, and unknown).</li>
+      </ol>
+    </section>
+
+    <!-- Comparative Trends and Analysis -->
+    <section class="mb-8 max-w-[800px]">
+      <h2 class="text-[18px] font-bold mb-3">Comparative Trends and Analysis</h2>
+      <p class="text-[18px] leading-relaxed mb-4">
+        Examining the global concentration of terrorist incidents by location, the Middle East &amp; North Africa region has the highest number of incidents from 1970 to 2019, followed by South Asia. In contrast, Central Asia and Australasia/Oceania have relatively low levels of terrorist activity. At the subnational level, provinces in Iraq show disproportionately high numbers of incidents compared to regions in other countries.
+      </p>
+      <p class="text-[18px] leading-relaxed mb-4">
+        Over time, the regional share of global terrorism has shifted. Western Europe accounted for a significant proportion of attacks in the 1970s, while Central America &amp; the Caribbean saw the highest share in the 1980s, alongside rising activity in South America. Since the mid-1990s, patterns have stabilized, with the Middle East &amp; North Africa and South Asia region gradually increasing their shares of global incidents.
+      </p>
+      <p class="text-[18px] leading-relaxed mb-4">
+        Historically, anti-colonial movements after World War II recognized how terrorism could generate publicity and influence policy. Given the high opportunity cost of terrorism, individuals who engage in terrorist activity are often driven less by economic conditions and more by strong ideological beliefs and political goals. As a result, global patterns of terrorism tend to reflect shifting centers of political conflict rather than purely socioeconomic factors.
+      </p>
+      <p class="text-[18px] leading-relaxed">
+        Across regions, bombing/explosion is the most common type of attack, followed by armed assault. One notable exception is facility/infrastructure attacks, which are relatively rare globally but occur more frequently in regions such as East Asia, Oceania, and North America. Compared to ordinary crime, terrorist incidents are typically more severe in intent and impact.
+      </p>
+    </section>
+
+    <!-- Case Study on Illinois and Literature Review -->
+    <section class="mb-10 max-w-[800px]">
+      <h2 class="text-[18px] font-bold mb-3">Case Study on Illinois and Literature Review</h2>
+      <p class="text-[18px] leading-relaxed mb-4">
+        In 1970, in Illinois, the Weather Underground Organization carried out the second bombing of the Haymarket Police Memorial statue in Chicago, an attack that was part of the late-1960s antiwar radicalism that targeted symbols of state power. Emerging from earlier actions such as the 1969 bombing and the "Days of Rage" protests, this incident was primarily symbolic, damaging a monument tied to the legacy of the 1886 Haymarket events ("Haymarket affair," 2026). The attack reflected broader political tensions and led to increased security measures and the eventual relocation of the statue, showing how terrorism can reshape public spaces and memory.
+      </p>
+      <p class="text-[18px] leading-relaxed mb-4">
+        Importantly, the perpetrators were not marginalized outsiders but educated, politically engaged individuals motivated by ideology and identity rather than poverty or mental illness. This case aligns with findings that highlight a lack of a clear "terrorist profile" (Apuzzo, 2016). Research by Alan Krueger similarly finds no consistent link between poverty and participation in terrorism. Common assumptions, such as mental illness or religious devotion, are also unreliable predictors.
+      </p>
+      <p class="text-[18px] leading-relaxed">
+        Despite this, many governmental counterterrorism efforts still rely on superficial indicators, such as appearance or behavioral stereotypes, which often fail to distinguish real threats from ordinary behaviors. Overall, radicalization is highly individualized and unpredictable, making incidents like the Haymarket bombing difficult to anticipate or prevent, even when they emerge from identifiable political and social tensions.
+      </p>
+    </section>
+
+    <!-- References -->
+    <section class="max-w-[800px]">
+      <h2 class="text-[18px] font-bold mb-3">References</h2>
+      <ul class="text-[18px] leading-relaxed space-y-3 list-none pl-0">
+        <li>[1] Federal Bureau of Investigation. (n.d.). <em>Chicago field office history</em>. https://www.fbi.gov/history/field-office-histories/chicago</li>
+        <li>[2] Haymarket affair. (2026, March 3). In <em>Wikipedia</em>. https://en.wikipedia.org/w/index.php?title=Haymarket_affair&amp;oldid=1341518504</li>
+        <li>[3] START (National Consortium for the Study of Terrorism and Responses to Terrorism). (2022). <em>Global Terrorism Database</em> (Version 2020) [Data set]. University of Maryland. https://www.start.umd.edu/gtd</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

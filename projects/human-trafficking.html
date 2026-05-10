@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olivia | Human Trafficking</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/custom.css">
+</head>
+<body class="pt-[178px]">
+
+  <nav class="fixed top-0 left-0 w-full bg-white z-50 h-[178px]">
+    <div class="flex items-center justify-between h-full px-[63px]">
+      <a href="../index.html">
+        <img src="../assets/images/logo.png" alt="Olivia" class="w-[70px] h-[70px] object-contain">
+      </a>
+      <ul class="hidden md:flex items-center gap-x-[50px] text-[18px] text-[#393a39]">
+        <li><a href="../index.html#consulting" class="nav-link" data-text="Consulting">Consulting</a></li>
+        <li><a href="../projects.html" class="nav-link" data-text="My Projects">My Projects</a></li>
+        <li><a href="../art.html" class="nav-link" data-text="Art">Art</a></li>
+        <li><a href="../about.html" class="nav-link" data-text="About Me">About Me</a></li>
+        <li><a href="../resume.pdf" target="_blank" class="nav-link" data-text="Resume">Resume</a></li>
+      </ul>
+      <button id="menu-toggle" class="md:hidden p-2" aria-label="Toggle menu" aria-expanded="false">
+        <div class="flex flex-col gap-1.5">
+          <span class="block w-6 h-0.5 bg-[#393a39]"></span>
+          <span class="block w-6 h-0.5 bg-[#393a39]"></span>
+          <span class="block w-6 h-0.5 bg-[#393a39]"></span>
+        </div>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden bg-white border-t border-gray-100 px-6 pb-4">
+      <ul class="flex flex-col text-[16px] text-[#393a39]">
+        <li><a href="../index.html#consulting" class="block py-3 hover:font-bold">Consulting</a></li>
+        <li><a href="../projects.html" class="block py-3 hover:font-bold">My Projects</a></li>
+        <li><a href="../art.html" class="block py-3 hover:font-bold">Art</a></li>
+        <li><a href="../about.html" class="block py-3 hover:font-bold">About Me</a></li>
+        <li><a href="../resume.pdf" target="_blank" class="block py-3 hover:font-bold">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="px-[126px] pt-10 pb-24 max-w-[1280px] mx-auto text-[#393a39]">
+
+    <h1 class="text-[25px] font-bold mb-6">Human Trafficking</h1>
+
+    <p class="text-[18px] leading-relaxed mb-10 max-w-[800px]">
+      Human trafficking has been a complicated global crime because of different social, demographic, and economic factors. It is a sensitive and often under-reported topic. This project will analyze the patterns in human trafficking cases by looking at exploitation types, victim age distribution over time, and relationships between victims and exploiters across age groups.
+    </p>
+
+    <!-- Tableau embed -->
+    <div class="mb-14 max-w-[900px] mx-auto">
+      <div class='tableauPlaceholder' id='viz1778398037567' style='position: relative'>
+        <noscript><a href='#'><img alt='ProjectDashboard' src='https://public.tableau.com/static/images/Hu/HumanTrafficking_17775029198470/ProjectDashboard/1_rss.png' style='border: none' /></a></noscript>
+        <object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='HumanTrafficking_17775029198470/ProjectDashboard' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https://public.tableau.com/static/images/Hu/HumanTrafficking_17775029198470/ProjectDashboard/1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en-US' />
+        </object>
+      </div>
+      <script type='text/javascript'>
+        var divElement = document.getElementById('viz1778398037567');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        if (divElement.offsetWidth > 800) { vizElement.style.width='850px'; vizElement.style.height='1127px'; }
+        else if (divElement.offsetWidth > 500) { vizElement.style.width='850px'; vizElement.style.height='1127px'; }
+        else { vizElement.style.width='100%'; vizElement.style.height='1727px'; }
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+      </script>
+    </div>
+
+    <!-- Methodology and Data Sources -->
+    <section class="mb-8 max-w-[800px]">
+      <h2 class="text-[18px] font-bold mb-3">Methodology and Data Sources</h2>
+      <p class="text-[18px] leading-relaxed">
+        Data are drawn from The Counter Trafficking Data Collaborative (CTDC) global dataset, which comprises identified or self-reported cases of victims of trafficking globally from 2005 to 2018. All observations with missing values for age, exploitation type, or exploiter relationship were excluded for better consistency, but this process may also introduce bias by under-representing cases where data collection is incomplete.
+      </p>
+    </section>
+
+    <!-- Measure Descriptions -->
+    <section class="mb-8 max-w-[800px]">
+      <h2 class="text-[18px] font-bold mb-3">Measure Descriptions</h2>
+      <p class="text-[18px] leading-relaxed mb-3">The analysis focuses on three variables related to human trafficking:</p>
+      <ol class="list-decimal list-inside text-[18px] leading-relaxed space-y-2 pl-2">
+        <li><strong>Victim's age:</strong> Age of reporting individuals when they reported their trafficking case.</li>
+        <li><strong>Exploitation type:</strong> The kind of exploitation victims experienced, including sexual exploitation, forced labor, forced marriage, slavery, and other kinds of exploitation.</li>
+        <li><strong>Exploiter relationship:</strong> The relationship between the exploiter and the victim, including family/relative, friend/acquaintance, intimate partner, and other kinds of relationship.</li>
+      </ol>
+      <p class="text-[18px] leading-relaxed mt-4">
+        Note that the year described in the dataset is the year reported, not necessarily the year the exploitation took place.
+      </p>
+    </section>
+
+    <!-- Comparative Trends and Analysis -->
+    <section class="mb-8 max-w-[800px]">
+      <h2 class="text-[18px] font-bold mb-3">Comparative Trends and Analysis</h2>
+      <p class="text-[18px] leading-relaxed mb-4">
+        The distribution of exploitation types shows that sexual exploitation and forced labor are the most commonly reported cases, accounting for the majority of trafficking incidents, and sexual exploitation is the most prevalent. Other categories such as forced marriage and slavery make up a smaller proportion of cases. The dominance of sexual exploitation and forced labor suggest that human trafficking is much driven by demand in labor and commercial sex markets.
+      </p>
+      <p class="text-[18px] leading-relaxed mb-4">
+        Examining the age distribution of victims, there is significant variation across age groups over time. Adolescents aged 9–17 consistently represent one of the largest shares of victims, indicating vulnerability among minors. Young children aged 0–8 appear less frequently in reported cases, though this may reflect underreporting or one's inability to report at such a young age rather than true incidence. Adult age groups, especially those between 21 and 38, show changing but strong representation. Thus, trafficking affects both minors and working-age adults. Over time, there are moderate shifts rather than dramatic structural changes in age distribution.
+      </p>
+      <p class="text-[18px] leading-relaxed">
+        The analysis of exploiter relationships reflects social dynamics. For younger victims, particularly those aged 0–17, exploiters are more likely to be family members or relatives, possibly due to the role of trust and proximity in achieving exploitation. As age increases, the proportion of non-familial exploiters such as acquaintances becomes more prominent, possibly due to more impersonal or organized trafficking networks. Notably, intimate partner exploitation appears across many age groups, though it is rarely the most dominant one. This shows that trafficking happens within romantic relationships, which complicates institutional prevention efforts or policy.
+      </p>
+    </section>
+
+    <!-- Literature Review and National Context -->
+    <section class="mb-10 max-w-[800px]">
+      <h2 class="text-[18px] font-bold mb-3">Literature Review and National Context</h2>
+      <p class="text-[18px] leading-relaxed mb-4">
+        Different from other crimes, human trafficking requires global efforts in prevention because of cross-border trafficking networks. International organizations aim to document broader global trends. Based on data from 155 countries, women and girls are the majority of detected trafficking victims, particularly in cases of sexual exploitation (United Nations Office on Drugs and Crime, 2019). Forced labor has been increasing rapidly, especially among adult victims, which reflects global labor market inequalities and systemic migration issues. Children are also disproportionately affected in certain regions, such as parts of Africa and Asia, validating our findings that young people are vulnerable to risks of trafficking.
+      </p>
+      <p class="text-[18px] leading-relaxed mb-4">
+        The countries that implemented the United Nations Protocol against Trafficking in Persons doubled in the past few years, but there are still many countries that lack legal instruments or political will against trafficking.
+      </p>
+      <p class="text-[18px] leading-relaxed mb-4">
+        Since the 21st century, there is more international awareness in preventing human trafficking. A 2025 global operation identified over 1,100 potential victims and led to more than 150 arrests; while there is strong persistence of trafficking networks, international cooperation in disrupting them is important. These operations also reveal that trafficking increasingly involves organized criminal networks, particularly in labor exploitation cases (INTERPOL, 2025).
+      </p>
+      <p class="text-[18px] leading-relaxed mb-4">
+        One's social and economic vulnerability are also key drivers of trafficking. Traffickers often use existing trusting relationships to control and exploit victims, as shown in our findings, and areas where people experience poverty, lack of education, and gender inequality are susceptible to trafficking because of that.
+      </p>
+      <p class="text-[18px] leading-relaxed">
+        In conclusion, human trafficking cannot be explained by a single factor, but it is rather a complex crime shaped by demographic vulnerabilities, social relationships, and global economic factors. Preventive policies must combine targeted protection for high-risk groups, stronger labor protections, and international collaboration to disrupt trafficking networks.
+      </p>
+    </section>
+
+    <!-- References -->
+    <section class="max-w-[800px]">
+      <h2 class="text-[18px] font-bold mb-3">References</h2>
+      <ul class="text-[18px] leading-relaxed space-y-3 list-none pl-0">
+        <li>[1] INTERPOL. (2025). <em>Global human trafficking operation detects 1,194 potential victims, arrests 158 suspects</em>. Interpol.int. https://www.interpol.int/en/News-and-Events/News/2025/Global-human-trafficking-operation-detects-1-194-potential-victims-arrests-158-suspects</li>
+        <li>[2] United Nations Office on Drugs and Crime. (2019). <em>Global report on trafficking in persons</em>. Unodc.org; United Nations. https://www.unodc.org/unodc/en/human-trafficking/global-report-on-trafficking-in-persons.html</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olivia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="pt-[178px]">
+
+  <nav class="fixed top-0 left-0 w-full bg-white z-50 h-[178px]">
+    <div class="flex items-center justify-between h-full px-[63px]">
+      <a href="index.html">
+        <img src="assets/images/logo.png" alt="Olivia" class="w-[70px] h-[70px] object-contain">
+      </a>
+      <ul class="hidden md:flex items-center gap-x-[50px] text-[18px] text-[#393a39]">
+        <li><a href="index.html#consulting" class="nav-link" data-text="Consulting">Consulting</a></li>
+        <li><a href="projects.html" class="nav-link" data-text="My Projects">My Projects</a></li>
+        <li><a href="art.html" class="nav-link" data-text="Art">Art</a></li>
+        <li><a href="about.html" class="nav-link" data-text="About Me">About Me</a></li>
+        <li><a href="resume.pdf" target="_blank" class="nav-link" data-text="Resume">Resume</a></li>
+      </ul>
+      <button id="menu-toggle" class="md:hidden p-2" aria-label="Toggle menu" aria-expanded="false">
+        <div class="flex flex-col gap-1.5">
+          <span class="block w-6 h-0.5 bg-[#393a39]"></span>
+          <span class="block w-6 h-0.5 bg-[#393a39]"></span>
+          <span class="block w-6 h-0.5 bg-[#393a39]"></span>
+        </div>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden bg-white border-t border-gray-100 px-6 pb-4">
+      <ul class="flex flex-col text-[16px] text-[#393a39]">
+        <li><a href="index.html#consulting" class="block py-3 hover:font-bold">Consulting</a></li>
+        <li><a href="projects.html" class="block py-3 hover:font-bold">My Projects</a></li>
+        <li><a href="art.html" class="block py-3 hover:font-bold">Art</a></li>
+        <li><a href="about.html" class="block py-3 hover:font-bold">About Me</a></li>
+        <li><a href="resume.pdf" target="_blank" class="block py-3 hover:font-bold">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="hero" class="relative bg-white overflow-hidden"
+           style="min-height: calc(10px + 64.5vw);">
+    <!-- Large decorative background text — overflows both edges per Figma -->
+    <p class="hero-bg-text absolute select-none pointer-events-none text-[#c69ef4] leading-none"
+       style="font-family: 'Oswald', sans-serif; font-size: 28.9vw; letter-spacing: -1.45vw; left: -1.95vw; top: 10px; white-space: nowrap; z-index: 0;">OLIVIA  MA</p>
+
+    <!-- Line-drawing portrait — sits on top of purple text, center-right -->
+    <img class="hero-portrait absolute"
+         src="assets/images/olivia-headshot.png"
+         alt="Portrait of Olivia Ma"
+         style="left: 51.6vw; top: calc(10px + 17.3vw); width: 29.4vw; height: auto; z-index: 10;">
+
+    <!-- Bio text — left side, below the big text -->
+    <div class="hero-bio absolute text-[#393a39]"
+         style="left: 63px; top: calc(10px + 42.6vw); width: 46.6vw; max-width: 597px; z-index: 5;">
+      <p style="font-size: 20px; line-height: normal;">
+        I&rsquo;m a <strong>CS</strong> and <strong>Econ</strong> student at Pomona College with a background and interest in consulting.
+      </p>
+      <p style="font-size: 20px; line-height: normal; margin-top: 1.5em;">
+        Check out where my curiosity has taken me so far!
+      </p>
+    </div>
+  </section>
+
+  <!-- #consulting section -->
+
+  <script src="js/main.js"></script>
+</body>
+</html>
