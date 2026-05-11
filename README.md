@@ -27,9 +27,9 @@ The landing page is a scrolling single page with the following sections:
 - `about.html`: Background, skills, education
 - `resume.pdf`: Resume PDF (placed in root, navbar links directly to it)
 
-### Navbar (fixed at top across all pages)
+### Navbar (disappear as scroll down)
 - **Logo / Name** → links to `index.html`
-- **Consulting** → links to `index.html#consulting` (if on another page, navigate to home first, then scroll)
+- **Consulting** → links to `index.html#consulting` (if on another page, navigate to the consulting section on home)
 - **My Projects** → links to `projects.html`
 - **Art** → links to `art.html`
 - **About Me** → links to `about.html`
@@ -61,7 +61,7 @@ personal-website/
 ## Design Principles
 
 ### Colors and typography
-- **Strictly follow the Figma design** — do not improvise
+- **Strictly follow the Figma design** - do not improvise
 - Use exact hex values extracted via Figma MCP
 - Load Google Fonts via `<link>` in `<head>`, using the exact font specified in Figma
 
@@ -87,13 +87,6 @@ Project cards have mixed click behavior — each card should have a Figma annota
 - Most projects → link to `projects/[project-slug].html` detail page
 - Some projects → external links (GitHub, Behance, etc.) with `target="_blank"`
 - If a card has no annotation, **ask me instead of guessing**
-
-## Special Handling: Tableau Dashboard
-One of the "My Projects" entries embeds a Tableau Public Dashboard:
-- The image in Figma is a placeholder, marked with an annotation
-- Replace it with Tableau's **iframe embed code** (I'll provide the embed link)
-- The iframe must be responsive: `width="100%"`, `height` around 600px, possibly shorter on mobile
-- If unsure about the embed format, **ask me — don't guess**
 
 ## Workflow Conventions
 
@@ -126,17 +119,16 @@ One of the "My Projects" entries embeds a Tableau Public Dashboard:
 
 ## GitHub Pages Deployment Notes
 - Use relative paths everywhere (avoid `/assets/...`, prefer `./assets/...` or `assets/...`)
-- If the repo name is not `<username>.github.io`, the site lives at `https://<username>.github.io/<repo-name>/` — adjust paths accordingly
 - Do not use any server-side features (e.g., backend forms)
 
 ## Current Progress
 - [x] Design: Figma Design file ready
 - [x] Environment: Claude Code + Figma MCP connected
-- [ ] Project skeleton setup
+- [x] Project skeleton setup
 - [ ] Landing + Consulting section (index.html)
-- [ ] My Projects page
+- [x] My Projects page
 - [ ] Project detail pages
 - [ ] Art page
-- [ ] About Me page
+- [x] About Me page
 - [ ] Mobile responsiveness check
-- [ ] Deploy to GitHub Pages
+- [x] Deploy to GitHub Pages
