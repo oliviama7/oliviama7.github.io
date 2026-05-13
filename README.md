@@ -38,7 +38,7 @@ The landing page is a scrolling single page with the following sections:
 ## File Structure
 ```
 personal-website/
-├── CLAUDE.md
+├── README.md
 ├── index.html              # Landing + Consulting
 ├── projects.html           # All project cards
 ├── art.html                # Art
